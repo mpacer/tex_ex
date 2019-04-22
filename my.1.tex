@@ -1,0 +1,32 @@
+\documentclass{article}
+    % General document formatting
+    \usepackage[margin=0.7in]{geometry}
+    \usepackage[parfill]{parskip}
+    % \usepackage[utf8]{inputenc}
+    \usepackage{graphicx}
+    \usepackage{grffile}
+
+\makeatletter
+\def\Gread@@xetex#1{%
+\IfFileExists{"\Gin@base".bb}%
+    {\Gread@eps{\Gin@base.bb}}%
+    {\Gread@@xetex@aux#1}%
+}
+\makeatother
+
+
+\begin{document}
+% Put your text here
+This is starter text.  hiyo
+
+\input{my.tex}
+\input{˚µhi.tex}
+\input{"˚µ\space hi.tex"}
+
+\includegraphics[width=0.1\textwidth]{pngs/enby-heart.png}
+
+\includegraphics[width=0.1\textwidth]{pngs/ågender-heart.png}
+
+\includegraphics[width=0.1\textwidth]{pngs 1/bi heart.png}
+
+\end{document}
